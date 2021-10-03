@@ -1,9 +1,7 @@
 from flask import Flask
+from pyrcs.ext.scraper.main import init_lyrics_app
 
-app = Flask(__name__)
-
-
-@app.route("/", methods=["GET"])
-def index():
-    return {"msg": "Hello world"}
-
+def create_app():
+    app = Flask(__name__)
+    init_lyrics_app(app)
+    return app

@@ -7,7 +7,7 @@ def read_requirements(file):
 setup(
     name="pyrcs",
     version="0.2.0",
-    description="Lyric API",
+    description="Lyrics API",
     packages=find_packages(),
     include_package_data=True,
     install_requires=read_requirements("requirements.txt"),
